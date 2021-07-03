@@ -1,0 +1,211 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(240, 238, 238);
+}
+.container{
+    background-color: rgb(173, 20, 20);
+    text-align: center;
+    margin: 20px 25px;
+    height: 50px;
+    width: 350x;
+}
+
+table{
+    margin: 8px auto;
+    padding: 3px;
+  
+}
+.calci{
+    display: inline-block;
+    width: auto;
+    height:auto;
+    align-items: center;
+    background-color:rgb(241, 241, 241); 
+    padding: 8px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgb(125, 122, 122);
+    border: 2px solid rgb(14, 13, 13);
+}
+/* .c-head h3{
+    width: auto;
+    height: 40px;
+    text-align: left;
+    padding-left: 5px;
+    font-size: 20px;
+
+} */
+.c-head {
+    width: auto;
+    height: 40px;
+    text-align: left;
+    
+    margin: 0px 2px 16px 5px;
+    
+}
+.c-head button{
+    height: 2px;
+    width: 5px;
+    align-items: center;
+    
+}
+ /* Light Mode Button Styles
+        --------------------------- */ 
+
+        .light-mode-button {
+            background:0;
+            border: 0;
+            box-sizing: border-box;
+            cursor: pointer;
+            height: 30px;
+            width: 70px;
+            position: relative;
+            border: 1px solid rgba(255,255,255,0);
+        }
+
+        .light-mode-button:focus {
+            outline:none; /* Not ideal for accessibility */
+        }
+
+        .light-mode-button span:nth-child(1) {
+            position: absolute;
+            top:0;
+            left:0;
+            width: 70px;
+            height:30px;
+            border-radius: 20px;
+            background-color: #d6d7db;
+            box-shadow: inset 1px 1px 3px 0 rgb(0 0 0 / 40%);
+            transition: .3s;
+        }
+
+        .light-mode-button span:nth-child(2) {
+            position: absolute;
+            top:5px;
+            left:5px;
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            border-radius: 50%;
+            box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 40%);
+            transition: .3s;
+        }
+/* Light & Dark Mode Styles
+--------------------------- */ 
+
+.calci {
+    background-color: #f6f6f6;
+    transition: background-color .3s;
+}
+
+.calci[light-mode=dark] {
+    background-color: #202122;
+    color: #ced4e2;
+}
+
+.calci[light-mode="dark"] .light-mode-button span:nth-child(1){
+    background-color: #ced4e2;
+    color: #4b4d4e;
+}
+
+.calci[light-mode=dark] .light-mode-button span:nth-child(2) {
+    left: 45px;
+    background-color: #4c4d4e;
+}
+.cont-input{
+    width: auto;
+    height: 110px;   
+    margin: 1px 5px;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid rgb(104, 101, 101);
+    border-width: 3px;
+}
+
+input{
+    font-size: 28px;
+    margin: 20px 25px 15px 10px ;
+    padding-top: 25px;
+    width: 330px; 
+    height: 20px;
+    background-color:  rgb(255, 255, 255);
+    border-style: none; 
+    align-items: center;
+    text-align: right;
+}
+ .keyboard{
+    margin: 1px;  
+    width: auto; 
+}
+#row1{
+    background-color: #FF4530;
+    border: 2px solid #DB2623; 
+}
+
+ .number {
+    font-size: 20px;
+    width: 55px;
+    height: 55px;
+    margin: 1px;
+    text-align: center;
+    background:  rgb(185, 179, 179);
+    border-radius: 50%;
+    border: 2px solid rgb(83, 83, 83);
+}
+.operator {
+    font-size: 25px;
+    height: 55px;
+    width: 55px;
+    margin: 3px;
+    text-align: center;
+    background:  rgb(169, 182, 238);
+    border-radius: 10px;
+    border: 2px solid rgb(57, 19, 106);
+}
+   #eq  {
+    display: flex-block;
+    width: 50%;
+    margin-bottom: 20px;
+    font-size: 26px;
+    cursor: pointer;
+    text-align: center;
+    
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+     }
+     #eq:hover {background-color: #3e8e41}
+
+     #eq:active {
+       background-color: #3e8e41;
+       box-shadow: 0 5px #666;
+       transform: translateY(4px);
+     }
+      
+      #eq .operator button:hover {
+        background-color: #4CAF50; /* Green */
+        color: white;
+      } 
+
+.number, .operator, .equal{
+	cursor: pointer;
+}
+.operator:active, .number:active, .equal:active{
+	font-size: 13px;
+}
+.operator:focus, .number:focus, .equal:focus{
+	outline: 0;
+}
+
+button:nth-child(4){
+	font-size: 20px;
+	background-color: #f08080;
+}
+.button:hover{
+    background-color: rgb(124, 60, 208);
+} 
